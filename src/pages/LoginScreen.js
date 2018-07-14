@@ -19,7 +19,7 @@ class LoginScreen extends React.Component {
     return (
       <div className="form-wrapper">
         <div className="form-container">
-          <div>{/*put your logo code here*/}</div>
+          <div></div>
           <div>
             <Form onSubmit={this.handleSubmit} className="login-form">
               <FormItem>
