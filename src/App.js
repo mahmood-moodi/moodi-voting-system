@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import icon from "./icon.png";
 
 // importing screens
 import LoginScreen from "./pages/LoginScreen";
@@ -34,7 +34,7 @@ class App extends Component {
       // </button>
       // </div>
       // </div>
-
+      
       <LoginScreen />
     );
   }
