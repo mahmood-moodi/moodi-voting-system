@@ -2,7 +2,8 @@ import React from "react";
 
 import { Form, Icon, Input, Button, Checkbox } from "antd";
 import "./LoginScreen.css";
-import icon from '../icon.png';
+
+import icon from "../icon.png";
 const FormItem = Form.Item;
 
 class LoginScreen extends React.Component {
@@ -19,10 +20,10 @@ class LoginScreen extends React.Component {
     const { getFieldDecorator } = this.props.form;
     return (
       <div className="form-wrapper">
-      <style>{'body { background-color: #ffeaa7; }'}</style>
+        <style>{"body { background-color: #ffeaa7; }"}</style>
         <div className="form-container">
           <div className="picture-container">
-          <img src={icon} />
+            <img src={icon} width={`auto`} height={`100%`}/>
           </div>
           <div>
             <Form onSubmit={this.handleSubmit} className="login-form">

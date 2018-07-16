@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import icon from "./icon.png";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // importing screens
 import LoginScreen from "./pages/LoginScreen";
+import AddCampaign from "./pages/AddCampigns";
 import "./App.css";
 
 class App extends Component {
@@ -16,26 +18,12 @@ class App extends Component {
 
   render() {
     return (
-      // <div className="form-inLine">
-      // <h2> Sign Up </h2>
-      // <div className="form-group" >
-      // <input
-      //   className = "form-control"
-      //   type = "text"
-      //   placeholder = "ID"
-      //   onChange={event=>this.setState({email: event.target.value})}
-      //   />
-      // <button
-      //   className="btn btn-primary"
-      //   type = "button"
-      //   onClick={()=>this.signUp}
-      // >
-      //   Sign Up
-      // </button>
-      // </div>
-      // </div>
-      
-      <LoginScreen />
+      <BrowserRouter>
+        <Switch>
+          <Route path="/login" component={LoginScreen} />
+          <Route path="/add-campigns" component={AddCampaign} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
